@@ -5,8 +5,8 @@ export default function Hero() {
         {/* Columna izquierda: texto */}
         <div>
           {/* Etiqueta arriba */}
-          <div className="inline-block bg-verde-suave text-verde-oscuro px-4 py-1 rounded-full text-sm mb-6">
-            📍 Comunidad Valenciana y Alicante
+          <div className="inline-flex items-center gap-2 bg-verde-suave text-verde-oscuro px-4 py-1 rounded-full text-sm mb-6">
+            <span aria-hidden="true">📍</span> Comunidad Valenciana y Alicante
           </div>
 
           {/* Título principal */}
@@ -37,8 +37,14 @@ export default function Hero() {
         </div>
 
         {/* Columna derecha: foto */}
-        <div className="relative">
-          <div className="aspect-square rounded-3xl overflow-hidden bg-verde-suave">
+        <div className="relative mt-8 md:mt-0 mx-auto md:mx-0 w-full max-w-sm md:max-w-none">
+          {/* Acento decorativo cálido detrás de la foto */}
+          <div
+            aria-hidden="true"
+            className="absolute -top-4 -right-4 w-32 h-32 rounded-full bg-mostaza/30 blur-2xl"
+          />
+
+          <div className="relative aspect-square rounded-3xl overflow-hidden bg-verde-suave ring-1 ring-verde/10 shadow-xl">
             {/* Cuando tengas la foto de Camila, la ponés acá */}
             <div className="w-full h-full flex items-center justify-center text-verde-oscuro text-lg">
               [Foto de Camila]
@@ -46,7 +52,7 @@ export default function Hero() {
           </div>
 
           {/* Badge flotante */}
-          <div className="absolute -bottom-6 -left-6 bg-mostaza text-verde-oscuro px-6 py-4 rounded-2xl shadow-lg">
+          <div className="absolute -bottom-5 -left-3 sm:-left-6 bg-mostaza text-verde-oscuro px-6 py-4 rounded-2xl shadow-lg">
             <div className="text-3xl font-serif-elegante">8+</div>
             <div className="text-sm">años de experiencia</div>
           </div>
