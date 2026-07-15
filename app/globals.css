@@ -12,6 +12,16 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
   body {
     font-family: var(--font-inter), system-ui, sans-serif;
     color: var(--color-texto);
@@ -20,6 +30,26 @@
 
   h1, h2, h3, h4 {
     font-family: var(--font-playfair), Georgia, serif;
+  }
+
+  /* El header fijo mide ~72px: sin este margen, las anclas quedan tapadas */
+  section[id] {
+    scroll-margin-top: 5.5rem;
+  }
+
+  /* Foco visible y consistente para navegación con teclado */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible {
+    outline: 2px solid var(--color-verde-profundo);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  ::selection {
+    background-color: var(--color-verde-suave);
+    color: var(--color-verde-oscuro);
   }
 }
 
@@ -34,4 +64,22 @@
   .bg-mostaza { background-color: var(--color-amarillo-mostaza); }
   .border-verde { border-color: var(--color-verde-profundo); }
   .font-serif-elegante { font-family: var(--font-playfair), Georgia, serif; }
+
+  /* Enlace "saltar al contenido": invisible hasta recibir foco */
+  .skip-link {
+    position: fixed;
+    top: -100%;
+    left: 1rem;
+    z-index: 100;
+    background-color: var(--color-verde-profundo);
+    color: var(--color-crema);
+    padding: 0.75rem 1.25rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    transition: top 0.2s;
+  }
+
+  .skip-link:focus {
+    top: 1rem;
+  }
 }

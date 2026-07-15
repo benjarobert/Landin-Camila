@@ -15,7 +15,8 @@ export default function SobreMi() {
         <div className="space-y-6 text-lg md:text-xl text-suave leading-relaxed">
           <p>
             Soy <span className="text-verde-oscuro font-medium">Camila Robert</span>,
-            Técnica Superior en Bromatología graduada en la UNC (2016). Llevo más de
+            Técnica Superior en Bromatología graduada en la Universidad Nacional
+            de Córdoba, Argentina (2016). Llevo más de
             8 años trabajando en sistemas de gestión de calidad e inocuidad
             alimentaria.
           </p>

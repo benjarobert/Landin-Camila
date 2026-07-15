@@ -1,10 +1,7 @@
 "use client";
 
 import { useState } from "react";
-
-// ⚠️ Reemplazar por los datos reales de Camila
-const EMAIL = "camila.robert@email.com";
-const LINKEDIN = "https://www.linkedin.com/in/camila-robert";
+import { SITE } from "@/lib/site";
 
 export default function Contacto() {
   const [datos, setDatos] = useState({
@@ -26,7 +23,7 @@ export default function Contacto() {
       datos.empresa ? ` · ${datos.empresa}` : ""
     }`;
     const cuerpo = `Nombre: ${datos.nombre}\nEmpresa: ${datos.empresa}\nEmail: ${datos.email}\n\n${datos.mensaje}`;
-    window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(
+    window.location.href = `mailto:${SITE.email}?subject=${encodeURIComponent(
       asunto
     )}&body=${encodeURIComponent(cuerpo)}`;
   };
@@ -46,25 +43,30 @@ export default function Contacto() {
             Hablemos
           </h2>
           <p className="text-lg text-suave leading-relaxed mb-8 max-w-md">
-            ¿Buscás sumar a tu equipo a alguien que se tome en serio la seguridad
-            alimentaria? Escribime y te respondo lo antes posible.
+            ¿Buscas sumar a tu equipo a alguien que se tome en serio la seguridad
+            alimentaria? Escríbeme y te respondo lo antes posible.
           </p>
 
           <div className="space-y-3">
             <a
-              href={`mailto:${EMAIL}`}
+              href={`mailto:${SITE.email}`}
               className="flex items-center gap-3 text-verde-oscuro hover:text-verde transition"
             >
               <span aria-hidden="true">✉️</span>
-              {EMAIL}
+              {SITE.email}
             </a>
             <a
-              href={LINKEDIN}
+              href={SITE.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 text-verde-oscuro hover:text-verde transition"
             >
-              <span aria-hidden="true">in</span>
+              <span
+                aria-hidden="true"
+                className="flex items-center justify-center w-5 h-5 rounded bg-verde text-crema text-[10px] font-bold"
+              >
+                in
+              </span>
               LinkedIn
             </a>
           </div>
@@ -84,6 +86,7 @@ export default function Contacto() {
               name="nombre"
               type="text"
               required
+              autoComplete="name"
               value={datos.nombre}
               onChange={actualizar}
               className={inputClass}
@@ -99,6 +102,7 @@ export default function Contacto() {
               id="empresa"
               name="empresa"
               type="text"
+              autoComplete="organization"
               value={datos.empresa}
               onChange={actualizar}
               className={inputClass}
@@ -115,6 +119,7 @@ export default function Contacto() {
               name="email"
               type="email"
               required
+              autoComplete="email"
               value={datos.email}
               onChange={actualizar}
               className={inputClass}
@@ -134,7 +139,7 @@ export default function Contacto() {
               value={datos.mensaje}
               onChange={actualizar}
               className={`${inputClass} resize-y`}
-              placeholder="Contame en qué puedo ayudar…"
+              placeholder="Cuéntame en qué puedo ayudar…"
             />
           </div>
 
@@ -142,8 +147,11 @@ export default function Contacto() {
             type="submit"
             className="w-full bg-verde text-crema px-8 py-4 rounded-full hover:bg-verde-oscuro transition"
           >
-            Hablemos
+            Enviar mensaje
           </button>
+          <p className="text-xs text-suave/70 text-center">
+            Al enviar se abrirá tu aplicación de correo con el mensaje listo.
+          </p>
         </form>
       </div>
     </section>

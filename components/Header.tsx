@@ -1,16 +1,26 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const enlaces = [
   { href: "#sobre-mi", label: "Sobre mí" },
   { href: "#areas", label: "Áreas" },
   { href: "#certificaciones", label: "Certificaciones" },
+  { href: "#como-trabajo", label: "Cómo trabajo" },
   { href: "#contacto", label: "Contacto" },
 ];
 
 export default function Header() {
   const [abierto, setAbierto] = useState(false);
+
+  useEffect(() => {
+    if (!abierto) return;
+    const cerrarConEscape = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setAbierto(false);
+    };
+    window.addEventListener("keydown", cerrarConEscape);
+    return () => window.removeEventListener("keydown", cerrarConEscape);
+  }, [abierto]);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-crema/90 backdrop-blur-md border-b border-verde/10">

@@ -31,7 +31,7 @@ export default function Hero() {
               href="#sobre-mi"
               className="border-2 border-verde text-verde px-8 py-4 rounded-full text-center hover:bg-verde-suave transition"
             >
-              Conoceme
+              Conóceme
             </a>
           </div>
         </div>
@@ -45,9 +45,17 @@ export default function Hero() {
           />
 
           <div className="relative aspect-square rounded-3xl overflow-hidden bg-verde-suave ring-1 ring-verde/10 shadow-xl">
-            {/* Cuando tengas la foto de Camila, la ponés acá */}
-            <div className="w-full h-full flex items-center justify-center text-verde-oscuro text-lg">
-              [Foto de Camila]
+            {/*
+              Cuando tengas la foto de Camila, reemplazá este bloque por:
+              <Image src="/camila.jpg" alt="Camila Robert, técnica en calidad y seguridad alimentaria" fill priority className="object-cover" />
+              (importando Image de "next/image" y guardando la foto en /public)
+            */}
+            <div
+              aria-hidden="true"
+              className="w-full h-full flex flex-col items-center justify-center gap-2 text-verde-oscuro"
+            >
+              <span className="font-serif-elegante text-7xl opacity-40">CR</span>
+              <span className="text-sm opacity-50">Foto de Camila</span>
             </div>
           </div>
 

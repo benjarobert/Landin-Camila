@@ -1,3 +1,5 @@
+import { SITE } from "@/lib/site";
+
 export default function Footer() {
   const anio = new Date().getFullYear();
 
@@ -8,10 +10,28 @@ export default function Footer() {
           href="#inicio"
           className="font-serif-elegante text-lg text-verde-oscuro"
         >
-          Camila Robert
+          {SITE.nombre}
         </a>
+
+        <nav aria-label="Contacto" className="flex items-center gap-6">
+          <a
+            href={`mailto:${SITE.email}`}
+            className="hover:text-verde transition"
+          >
+            Email
+          </a>
+          <a
+            href={SITE.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-verde transition"
+          >
+            LinkedIn
+          </a>
+        </nav>
+
         <p>
-          © {anio} Camila Robert · Calidad y Seguridad Alimentaria
+          © {anio} {SITE.nombre} · Calidad y Seguridad Alimentaria
         </p>
       </div>
     </footer>
