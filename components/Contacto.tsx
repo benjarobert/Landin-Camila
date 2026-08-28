@@ -42,19 +42,53 @@ export default function Contacto() {
           <h2 className="font-serif-elegante text-3xl md:text-4xl lg:text-5xl text-verde-oscuro leading-tight mb-6">
             Hablemos
           </h2>
-          <p className="text-lg text-suave leading-relaxed mb-8 max-w-md">
-            ¿Buscas sumar a tu equipo a alguien que se tome en serio la seguridad
-            alimentaria? Escríbeme y te respondo lo antes posible.
+          <p className="text-lg text-suave leading-relaxed mb-4 max-w-md">
+            Si buscas incorporar a tu equipo a alguien que se tome en serio la
+            seguridad alimentaria, escríbeme por el canal que prefieras y te
+            respondo lo antes posible.
+          </p>
+          <p className="text-sm text-suave/80 leading-relaxed mb-8 max-w-md italic">
+            También estoy abierta a colaboraciones puntuales o proyectos por
+            encargo.
           </p>
 
-          <div className="space-y-3">
+          <div className="space-y-4">
             <a
               href={`mailto:${SITE.email}`}
               className="flex items-center gap-3 text-verde-oscuro hover:text-verde transition"
             >
-              <span aria-hidden="true">✉️</span>
-              {SITE.email}
+              <span
+                aria-hidden="true"
+                className="flex items-center justify-center w-9 h-9 rounded-full bg-verde-suave/60 text-verde-oscuro text-sm"
+              >
+                ✉
+              </span>
+              <span>
+                <span className="block text-xs uppercase tracking-wider text-suave">
+                  Email
+                </span>
+                {SITE.email}
+              </span>
             </a>
+
+            <a
+              href={`tel:${SITE.telefonoLink}`}
+              className="flex items-center gap-3 text-verde-oscuro hover:text-verde transition"
+            >
+              <span
+                aria-hidden="true"
+                className="flex items-center justify-center w-9 h-9 rounded-full bg-verde-suave/60 text-verde-oscuro text-sm"
+              >
+                ☎
+              </span>
+              <span>
+                <span className="block text-xs uppercase tracking-wider text-suave">
+                  Teléfono
+                </span>
+                {SITE.telefono}
+              </span>
+            </a>
+
             <a
               href={SITE.linkedin}
               target="_blank"
@@ -63,11 +97,16 @@ export default function Contacto() {
             >
               <span
                 aria-hidden="true"
-                className="flex items-center justify-center w-5 h-5 rounded bg-verde text-crema text-[10px] font-bold"
+                className="flex items-center justify-center w-9 h-9 rounded-full bg-verde text-crema text-[10px] font-bold"
               >
                 in
               </span>
-              LinkedIn
+              <span>
+                <span className="block text-xs uppercase tracking-wider text-suave">
+                  LinkedIn
+                </span>
+                /in/camilarobert
+              </span>
             </a>
           </div>
         </div>

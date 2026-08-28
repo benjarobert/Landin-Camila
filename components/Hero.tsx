@@ -6,7 +6,7 @@ export default function Hero() {
         <div>
           {/* Etiqueta arriba */}
           <div className="inline-flex items-center gap-2 bg-verde-suave text-verde-oscuro px-4 py-1 rounded-full text-sm mb-6">
-            <span aria-hidden="true">📍</span> Comunidad Valenciana y Alicante
+            <span aria-hidden="true">📍</span> Valencia · Disponible ahora
           </div>
 
           {/* Título principal */}
@@ -16,7 +16,10 @@ export default function Hero() {
 
           {/* Subtítulo */}
           <p className="text-xl md:text-2xl text-suave mb-8 leading-relaxed">
-            Técnica en Calidad y Seguridad Alimentaria. Ayudo a empresas del sector alimentario a producir con seguridad y cumplir con las principales normativas internacionales.
+            Bromatóloga con más de 8 años de experiencia en calidad y seguridad
+            alimentaria en Argentina, Austria, Italia y España. Busco sumarme a
+            un equipo en la Comunidad Valenciana donde aportar rigor, formación
+            y cuidado por el detalle.
           </p>
 
           {/* Botones */}
@@ -25,13 +28,13 @@ export default function Hero() {
               href="#contacto"
               className="bg-verde text-crema px-8 py-4 rounded-full text-center hover:bg-verde-oscuro transition"
             >
-              ¿Hablamos?
+              Contactar
             </a>
             <a
-              href="#sobre-mi"
+              href="#experiencia"
               className="border-2 border-verde text-verde px-8 py-4 rounded-full text-center hover:bg-verde-suave transition"
             >
-              Conóceme
+              Ver mi experiencia
             </a>
           </div>
         </div>

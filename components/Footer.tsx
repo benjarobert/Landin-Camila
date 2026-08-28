@@ -21,6 +21,12 @@ export default function Footer() {
             Email
           </a>
           <a
+            href={`tel:${SITE.telefonoLink}`}
+            className="hover:text-verde transition"
+          >
+            Teléfono
+          </a>
+          <a
             href={SITE.linkedin}
             target="_blank"
             rel="noopener noreferrer"

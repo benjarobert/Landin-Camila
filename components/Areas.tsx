@@ -3,21 +3,21 @@ const areas = [
     numero: "01",
     titulo: "Prevención y Control",
     descripcion:
-      "Diseño e implementación de sistemas APPCC para identificar, evaluar y controlar los peligros que afectan a la inocuidad de los alimentos.",
+      "Experiencia en el diseño, implementación y seguimiento de sistemas APPCC para identificar, evaluar y controlar los peligros que afectan a la inocuidad de los alimentos.",
     etiqueta: "APPCC",
   },
   {
     numero: "02",
     titulo: "Garantía de Calidad",
     descripcion:
-      "Sistemas de gestión que aseguran que cada producto cumpla, de forma consistente, con los estándares de calidad definidos.",
+      "Trabajo con sistemas de gestión que aseguran que cada producto cumpla, de forma consistente, con los estándares de calidad definidos.",
     etiqueta: "Quality Assurance",
   },
   {
     numero: "03",
     titulo: "Cumplimiento Normativo",
     descripcion:
-      "Adecuación a las principales normativas internacionales del sector alimentario y preparación para auditorías.",
+      "Experiencia en las principales normativas internacionales del sector alimentario y en la preparación y acompañamiento de auditorías.",
     etiqueta: "ISO 22000 · BRCGS · IFS",
   },
   {
@@ -35,10 +35,10 @@ export default function Areas() {
       <div className="max-w-6xl mx-auto">
         <div className="max-w-2xl mb-14">
           <p className="text-sm uppercase tracking-widest text-mostaza mb-4">
-            En qué puedo ayudar
+            Áreas de expertise
           </p>
           <h2 className="font-serif-elegante text-3xl md:text-4xl lg:text-5xl text-verde-oscuro leading-tight">
-            Cuatro pilares de trabajo
+            Cuatro pilares de mi trabajo
           </h2>
         </div>
 

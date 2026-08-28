@@ -4,9 +4,9 @@ import { useEffect, useState } from "react";
 
 const enlaces = [
   { href: "#sobre-mi", label: "Sobre mí" },
+  { href: "#experiencia", label: "Experiencia" },
   { href: "#areas", label: "Áreas" },
   { href: "#certificaciones", label: "Certificaciones" },
-  { href: "#como-trabajo", label: "Cómo trabajo" },
   { href: "#contacto", label: "Contacto" },
 ];
 
@@ -52,7 +52,7 @@ export default function Header() {
           href="#contacto"
           className="hidden md:inline-block bg-verde text-crema px-5 py-2 rounded-full text-sm hover:bg-verde-oscuro transition"
         >
-          ¿Hablamos?
+          Contactar
         </a>
 
         {/* Botón hamburguesa (mobile) */}
@@ -115,7 +115,7 @@ export default function Header() {
               onClick={() => setAbierto(false)}
               className="mt-3 bg-verde text-crema px-5 py-3 rounded-full text-sm text-center hover:bg-verde-oscuro transition"
             >
-              ¿Hablamos?
+              Contactar
             </a>
           </div>
         </nav>
