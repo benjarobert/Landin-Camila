@@ -16,8 +16,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  // ⚠️ Cambiar por el dominio real cuando el sitio esté publicado
-  metadataBase: new URL("https://camilarobert.example.com"),
+  metadataBase: new URL("https://camilarobert.vercel.app"),
   title: `${SITE.nombre} · ${SITE.rol}`,
   description: SITE.descripcion,
   keywords: [
