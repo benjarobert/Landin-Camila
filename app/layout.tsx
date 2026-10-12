@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "BRCGS",
     "IFS",
     "Valencia",
-    "Alicante",
+    "Comunidad Valenciana",
   ],
   authors: [{ name: SITE.nombre }],
   openGraph: {

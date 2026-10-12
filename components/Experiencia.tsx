@@ -1,14 +1,13 @@
 const experiencias = [
   {
     bandera: "🇪🇸",
-    puesto: "Técnica de Calidad y Operaciones",
-    empresa: "Apple Retail Store",
-    lugar: "España",
+    puesto: "Especialista en Ventas & Experiencia de Cliente",
+    empresa: "Apple",
+    lugar: "Valencia, España",
     periodo: "Oct. 2024 – Actualidad",
     puntos: [
-      "Gestión, seguimiento y resolución de no conformidades mediante análisis de causa raíz y planes de acciones correctivas y preventivas (Ciclo CAPA).",
-      "Monitoreo de auditorías internas de procesos y cumplimiento de estándares de calidad.",
-      "Análisis de datos operativos con Excel y herramientas digitales para optimizar los flujos de calidad.",
+      "Formé a 17 colaboradores en producto y ventas, adaptando la formación inicial según sus necesidades y reduciendo un 20% el tiempo de onboarding.",
+      "Mantuve un NPS (Net Promoter Score) de 98 sobre 100, auditado por Medallia, mediante el seguimiento de indicadores y estándares de servicio.",
     ],
   },
   {
@@ -18,20 +17,21 @@ const experiencias = [
     lugar: "Sicilia, Italia",
     periodo: "Feb. 2024 – Sept. 2024",
     puntos: [
-      "Control diario, supervisión y registro de Puntos Críticos de Control (APPCC) garantizando la seguridad alimentaria.",
-      "Supervisión del cumplimiento de la normativa de alérgenos y gestión rigurosa de stock (FIFO/FEFO).",
-      "Mantenimiento e implantación de protocolos POES de limpieza y desinfección en planta.",
+      "Supervisé y registré a diario los Puntos Críticos de Control (PCC) verificando su cumplimiento en planta.",
+      "Controlé la gestión de alérgenos y el almacenamiento de producto mediante criterios FIFO/FEFO, reduciendo las mermas por caducidad en un 10%.",
+      "Implanté y mantuve los protocolos POES de limpieza y desinfección, realizando el seguimiento de los registros asociados a los procedimientos de higiene.",
     ],
   },
   {
     bandera: "🇦🇹",
-    puesto: "Técnica de Control de Calidad Alimentaria",
+    puesto: "Técnica en Control de Calidad Alimentaria",
     empresa: "Flink SE",
     lugar: "Viena, Austria",
     periodo: "Ene. 2023 – Dic. 2023",
     puntos: [
-      "Monitoreo estricto de registros técnicos del sistema de gestión bajo normas APPCC e IFS/BRC, garantizando la trazabilidad documental.",
-      "Gestión y supervisión del plan de control de plagas y cadenas de frío en almacén.",
+      "Controlé las condiciones de almacenamiento y conservación del producto, dentro del seguimiento de la cadena de frío y los requisitos de seguridad alimentaria.",
+      "Realicé check-lists periódicos de control en almacén y registré las desviaciones detectadas para su seguimiento, comunicándolas durante los controles de calidad.",
+      "Supervisé el plan de control de plagas y la cadena de frío en almacén, manteniendo un 100% de eficacia y conformidad en los controles realizados.",
     ],
   },
   {
@@ -41,9 +41,9 @@ const experiencias = [
     lugar: "Córdoba, Argentina",
     periodo: "Feb. 2019 – Dic. 2021",
     puntos: [
-      "Diseño e implantación integral del sistema APPCC, definición de fichas técnicas y determinación de Puntos Críticos de Control (PCC).",
-      "Coordinación y soporte en auditorías internas y externas de certificación bajo normativas de seguridad alimentaria.",
-      "Control de etiquetado, toma de muestras y gestión de análisis microbiológicos con laboratorios externos.",
+      "Diseñé e implanté el sistema APPCC de la planta, elaborando fichas técnicas y determinando los Puntos Críticos de Control.",
+      "Ejecuté el control de etiquetado y la toma de muestras, verificando los controles establecidos y coordinando análisis microbiológicos con laboratorios externos.",
+      "Completé los registros y documentación del sistema de Calidad y Seguridad Alimentaria, asegurando la disponibilidad de la información necesaria para los controles y auditorías.",
     ],
   },
 ];
@@ -60,7 +60,7 @@ export default function Experiencia() {
             Trayectoria
           </p>
           <h2 className="font-serif-elegante text-3xl md:text-4xl lg:text-5xl leading-tight">
-            Ocho años de trabajo en cuatro países
+            Más de siete años de trabajo en cuatro países
           </h2>
         </div>
 

@@ -41,7 +41,7 @@ export default function OpengraphImage() {
           {SITE.nombre}
         </div>
         <div style={{ fontSize: 34, color: "#4A5240", maxWidth: 900 }}>
-          APPCC · ISO 22000 · BRCGS · IFS — Comunidad Valenciana y Alicante
+          APPCC · BRCGS v9 · IFS v8 — Valencia y alrededores
         </div>
         <div
           style={{

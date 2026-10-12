@@ -3,29 +3,29 @@ const areas = [
     numero: "01",
     titulo: "Prevención y Control",
     descripcion:
-      "Experiencia en el diseño, implementación y seguimiento de sistemas APPCC para identificar, evaluar y controlar los peligros que afectan a la inocuidad de los alimentos.",
-    etiqueta: "APPCC",
+      "Diseño, implantación y seguimiento de sistemas APPCC: determinación y supervisión diaria de los Puntos Críticos de Control y protocolos POES de limpieza y desinfección.",
+    etiqueta: "APPCC · PCC · POES",
   },
   {
     numero: "02",
     titulo: "Garantía de Calidad",
     descripcion:
-      "Trabajo con sistemas de gestión que aseguran que cada producto cumpla, de forma consistente, con los estándares de calidad definidos.",
-    etiqueta: "Quality Assurance",
+      "Registros y documentación del sistema de calidad, check-lists de control y gestión de no conformidades con análisis de causa raíz y acciones correctivas.",
+    etiqueta: "No conformidades · Causa raíz",
   },
   {
     numero: "03",
     titulo: "Cumplimiento Normativo",
     descripcion:
-      "Experiencia en las principales normativas internacionales del sector alimentario y en la preparación y acompañamiento de auditorías.",
-    etiqueta: "ISO 22000 · BRCGS · IFS",
+      "Trabajo con los principales estándares del sector alimentario y apoyo en auditorías internas y externas, con la información siempre disponible y trazable.",
+    etiqueta: "ISO 22000 · FSSC 22000 · BRCGS v9 · IFS v8",
   },
   {
     numero: "04",
-    titulo: "Cultura de Seguridad",
+    titulo: "Control Operativo",
     descripcion:
-      "Formación y acompañamiento de equipos para que la seguridad alimentaria forme parte del día a día, no de un manual guardado en un cajón.",
-    etiqueta: "Food Safety Culture",
+      "Gestión de alérgenos, almacenamiento FIFO/FEFO, control de plagas y cadena de frío, etiquetado, toma de muestras y coordinación de análisis microbiológicos.",
+    etiqueta: "Alérgenos · Cadena de frío · Trazabilidad",
   },
 ];
 

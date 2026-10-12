@@ -12,16 +12,20 @@ export default function Hero() {
           </div>
 
           {/* Título principal */}
-          <h1 className="font-serif-elegante text-5xl md:text-6xl lg:text-7xl text-verde-oscuro leading-tight mb-6">
+          <h1 className="font-serif-elegante text-5xl md:text-6xl lg:text-7xl text-verde-oscuro leading-tight mb-4">
             Hola, soy <span className="text-mostaza">Camila Robert</span>
           </h1>
 
+          <p className="text-sm uppercase tracking-widest text-verde mb-6">
+            Calidad y seguridad alimentaria · APPCC · BRCGS v9 · IFS v8
+          </p>
+
           {/* Subtítulo */}
           <p className="text-xl md:text-2xl text-suave mb-8 leading-relaxed">
-            Bromatóloga con más de 8 años de experiencia en calidad y seguridad
-            alimentaria en Argentina, Austria, Italia y España. Busco sumarme a
-            un equipo en la Comunidad Valenciana donde aportar rigor, formación
-            y cuidado por el detalle.
+            Bromatóloga con más de 7 años de experiencia en calidad y seguridad
+            alimentaria en plantas y almacenes de Argentina, Austria e Italia.
+            Hoy en Valencia, busco sumarme a un equipo donde aportar rigor y
+            cuidado por el detalle.
           </p>
 
           {/* Botones */}
@@ -62,7 +66,7 @@ export default function Hero() {
 
           {/* Badge flotante */}
           <div className="absolute -bottom-5 -left-3 sm:-left-6 bg-mostaza text-verde-oscuro px-6 py-4 rounded-2xl shadow-lg">
-            <div className="text-3xl font-serif-elegante">8+</div>
+            <div className="text-3xl font-serif-elegante">7+</div>
             <div className="text-sm">años de experiencia</div>
           </div>
         </div>
