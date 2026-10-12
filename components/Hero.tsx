@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section id="inicio" className="min-h-screen pt-32 pb-20 px-6 bg-crema">
@@ -48,18 +50,14 @@ export default function Hero() {
           />
 
           <div className="relative aspect-square rounded-3xl overflow-hidden bg-verde-suave ring-1 ring-verde/10 shadow-xl">
-            {/*
-              Cuando tengas la foto de Camila, reemplazá este bloque por:
-              <Image src="/camila.jpg" alt="Camila Robert, técnica en calidad y seguridad alimentaria" fill priority className="object-cover" />
-              (importando Image de "next/image" y guardando la foto en /public)
-            */}
-            <div
-              aria-hidden="true"
-              className="w-full h-full flex flex-col items-center justify-center gap-2 text-verde-oscuro"
-            >
-              <span className="font-serif-elegante text-7xl opacity-40">CR</span>
-              <span className="text-sm opacity-50">Foto de Camila</span>
-            </div>
+            <Image
+              src="/camila.jpg"
+              alt="Camila Robert, técnica en calidad y seguridad alimentaria"
+              fill
+              priority
+              sizes="(min-width: 768px) 50vw, 90vw"
+              className="object-cover object-[50%_60%]"
+            />
           </div>
 
           {/* Badge flotante */}

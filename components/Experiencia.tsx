@@ -39,7 +39,7 @@ const experiencias = [
     puesto: "Técnica de Calidad y Seguridad Alimentaria",
     empresa: "La Nueva S.A.",
     lugar: "Córdoba, Argentina",
-    periodo: "Feb. 2024 – Sept. 2024",
+    periodo: "Feb. 2019 – Dic. 2021",
     puntos: [
       "Diseño e implantación integral del sistema APPCC, definición de fichas técnicas y determinación de Puntos Críticos de Control (PCC).",
       "Coordinación y soporte en auditorías internas y externas de certificación bajo normativas de seguridad alimentaria.",

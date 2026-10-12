@@ -3,7 +3,7 @@ export const SITE = {
   nombre: "Camila Robert",
   rol: "Técnica en Calidad y Seguridad Alimentaria",
   email: "cami.robert15@outlook.com",
-  telefono: "+34 611 31 88 83",
+  telefono: "+34 611 318 883",
   // Sin espacios ni "+" para el atributo href="tel:"
   telefonoLink: "+34611318883",
   linkedin: "https://www.linkedin.com/in/camilarobert/",
